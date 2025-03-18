@@ -1,0 +1,136 @@
+.sriracha-regular {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body{
+    background: linear-gradient(to top, #0307ff, 50%, #268bff);
+    background-attachment: fixed;
+    margin: 0;
+    zoom: 90%;
+}
+
+div#card{
+    width: 100%; /* Ocupa toda a largura do card */
+    height: 100%; /* Ocupa toda a altura do card */   
+    background-color: #7cb9ffc7;
+    margin: auto;
+    margin-top: 12%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+div.sobre{
+    position: relative;
+    background-color: #fefee2;
+    width: 100%; /* Ocupa toda a largura do card */
+    height: 100%; /* Ocupa toda a altura do card */
+    border-radius: 5px;
+    margin: 1px 5px;
+    padding-bottom: 3px;
+}
+
+div.imgfundo {
+    position: absolute;
+    width: 100%; /* Ocupa toda a largura do card */
+    height: 100%; /* Ocupa toda a altura do card */
+    background-image: url('Gappy\ Higashikata.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Faz a imagem cobrir toda a div */
+    opacity: 0.3;
+    text-align: center;
+    margin: auto;
+}
+
+div > h1{
+    margin: 0;
+    position: relative;
+    font-family: "Sriracha", cursive;
+}
+
+div > p {
+    position: relative;
+    font-family: "Sriracha", cursive;
+    font-weight: bold; /* Deixa o texto mais grosso */
+    text-align: justify;
+    text-indent: 2.5em;
+    margin: 20px 5%;
+}
+
+
+
+
+
+div#card {
+    position: relative; /* Define como referência para elementos filhos com position absolute */
+    height: 652px; /* 435 * 1.5 */
+    width: 360px;  /* 240 * 1.5 */
+    background-color: #7cb9ffc7; /* Cor de fundo do card com transparência */
+    margin: auto; /* Centraliza o card horizontalmente */
+    margin-top: 1%; /* Define um espaçamento superior para o card */
+    border-radius: 7px; /* Arredonda os cantos do card */
+    text-align: center; /* Centraliza o texto dentro do card */
+    padding: 5px 0; /* Adiciona espaçamento interno no topo e base */
+    box-shadow: 15px 15px 40px #0099ff; /* Adiciona uma sombra azul ao redor do card */
+    transition: transform 0.1s; /* Faz a animação de rotação ser suave */
+    transform-style: preserve-3d; /* Mantém o efeito 3D ao girar o card */
+}
+
+div#card:hover {
+    transform: rotateY(180deg); /* Gira o card em 180° ao passar o mouse */
+}
+
+.card-inner {
+    position: relative; /* Mantém os elementos filhos dentro do card */
+    width: 100%; /* Ocupa toda a largura do card */
+    height: 100%; /* Ocupa toda a altura do card */
+    transition: transform 0.1s; /* Suaviza a rotação */
+    transform-style: preserve-3d; /* Mantém o efeito 3D na rotação */
+}
+
+.card-front,
+.card-back {
+    position: absolute; /* Permite que ambas as faces fiquem sobrepostas */
+    width: 100%; /* Ocupa toda a largura do card */
+    height: 100%; /* Ocupa toda a altura do card */
+    backface-visibility: hidden; /* Esconde a face de trás quando o card não está girado */
+}
+
+.card-back {
+    position: relative;
+    transform: rotateY(180deg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 15px 15px 40px #0099ff;
+    width: 100%;
+    height: 100%;
+    border: 10px solid #00b7ff;
+}
+
+.card-back::before {
+    content: ''; /* Cria um pseudo-elemento vazio */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('softandwet.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Aplica a opacidade à imagem de fundo */
+    z-index: -1; /* Garante que o pseudo-elemento fique atrás do conteúdo */
+}
+
+.status{
+    margin-top: auto;
+    width: 340px;  /* 240 * 1.5 */
+    height: 250px; /* 435 * 1.5 */
+}
+
+.statusfoto{
+    height: 100%;
+    width: 100%;
+}
