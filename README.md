@@ -14,13 +14,6 @@ Ao interagir com o card, você poderá conhecer um pouco da história de Josuke 
 ## 🌐 Acesse o Projeto Online
 👉 [Clique aqui para ver o card online](https://eduardo129517.github.io/josukehigashikata/)
 
-> Substitua o link acima pelo gerado no GitHub Pages.
-
-## 🛠 Como Testar o Projeto
-1. Acesse o link acima ou clone o repositório:
-git clone https://github.com/seuusuario/seurepositorio.git
-2. Abra o arquivo `index.html` em seu navegador.
-3. Clique no card para visualizar a parte de trás com as habilidades do Stand.
 
 ## 🎯 Funcionalidades
 ✅ Card com efeito flip interativo.  
